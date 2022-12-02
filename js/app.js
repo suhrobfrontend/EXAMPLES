@@ -49,16 +49,16 @@ elForm.addEventListener("submit", function (evt) {
   evt.preventDefault();
 
   if (elSelect.value === "rub") {
-    elHeading.textContent = `taqriban ${Math.round(
-      elInput.value / rub
+    elHeading.textContent = `taqriban ${(elInput.value / rub).toFixed(
+      2
     )} "rubl" pulingiz bor`;
   } else if (elSelect.value === "usd") {
-    elHeading.textContent = `taqriban ${Math.round(
-      elInput.value / usd
+    elHeading.textContent = `taqriban ${(elInput.value / usd).toFixed(
+      2
     )} "dollar" pulingiz bor`;
   } else {
-    elHeading.textContent = `taqriban ${Math.round(
-      elInput.value / euro
+    elHeading.textContent = `taqriban ${(elInput.value / euro).toFixed(
+      2
     )} "euro" pulingiz bor`;
   }
 });
