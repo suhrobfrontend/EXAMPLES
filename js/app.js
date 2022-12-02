@@ -42,17 +42,23 @@ var elButton = document.querySelector("[data-btn]");
 var elHeading = document.querySelector("[data-heading]");
 // valutalar
 var rub = 181;
-var dollar = 11257;
+var usd = 11257;
 var euro = 11830;
 
 elForm.addEventListener("submit", function (evt) {
   evt.preventDefault();
 
   if (elSelect.value === "rub") {
-    elHeading.textContent = `${Math.round(elInput.value / rub)} "rubl" pulingiz bor`;
-  } else if (elSelect.value === "dollar") {
-    elHeading.textContent = `${Math.round(elInput.value / dollar)} "dollar" pulingiz bor`;
+    elHeading.textContent = `${Math.round(
+      elInput.value / rub
+    )} "rubl" pulingiz bor`;
+  } else if (elSelect.value === "usd") {
+    elHeading.textContent = `${Math.round(
+      elInput.value / usd
+    )} "dollar" pulingiz bor`;
   } else {
-    elHeading.textContent = `${Math.round(elInput.value / euro)} "euro" pulingiz bor`;
+    elHeading.textContent = `${Math.round(
+      elInput.value / euro
+    )} "euro" pulingiz bor`;
   }
 });
