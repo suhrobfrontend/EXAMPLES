@@ -14,7 +14,7 @@
 .text {
   text-align: center;
   margin-bottom: 70px;
-  opacity: .6;
+  opacity: 0.6;
   font-size: 32px;
 }
 
@@ -25,7 +25,6 @@
   justify-content: center;
   gap: 50px;
 }
-
 
 input {
   color: darkblue;
@@ -70,7 +69,6 @@ h2 {
   margin-top: 50px;
   font-size: 45px;
 }
-
 
 /* Media queries */
 @media only screen and (max-width: 576px) {
