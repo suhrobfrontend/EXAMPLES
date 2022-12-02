@@ -30,10 +30,14 @@ input {
   color: darkblue;
   padding: 4px;
   border: 1px solid darkblue;
-  outline: 1px solid black;
+  outline: none;
+  width: 250px;
   text-align: center;
   border-radius: 4px;
-  max-width: 390px;
+}
+
+input:hover {
+  border: 1px solid transparent;
 }
 
 select {
@@ -82,7 +86,7 @@ h2 {
 
   input {
     padding: 2px;
-    max-width: 200px;
+    max-width: 140px;
   }
 
   select {
