@@ -87,6 +87,10 @@ h2 {
     max-width: 200px;
   }
 
+  select {
+    padding: 2px;
+  }
+
   .form-content {
     gap: 20px;
   }
