@@ -8,6 +8,7 @@
 .container {
   max-width: max-content;
   margin: 200px auto 0;
+  padding: 10px;
 }
 
 .text {
@@ -31,7 +32,9 @@ input {
   padding: 4px;
   border: 1px solid darkblue;
   outline: 1px solid black;
+  text-align: center;
   border-radius: 4px;
+  max-width: 390px;
 }
 
 select {
@@ -70,7 +73,7 @@ h2 {
 
 
 /* Media queries */
-@media only screen and (max-width: 576px) and (min-width: 250px) {
+@media only screen and (max-width: 576px) {
   * {
     font-size: 20px;
   }
@@ -81,6 +84,7 @@ h2 {
 
   input {
     padding: 2px;
+    max-width: 200px;
   }
 
   .form-content {
