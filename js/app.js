@@ -49,15 +49,15 @@ elForm.addEventListener("submit", function (evt) {
   evt.preventDefault();
 
   if (elSelect.value === "rub") {
-    elHeading.textContent = `taqriban${Math.round(
+    elHeading.textContent = `taqriban ${Math.round(
       elInput.value / rub
     )} "rubl" pulingiz bor`;
   } else if (elSelect.value === "usd") {
-    elHeading.textContent = `taqriban${Math.round(
+    elHeading.textContent = `taqriban ${Math.round(
       elInput.value / usd
     )} "dollar" pulingiz bor`;
   } else {
-    elHeading.textContent = `taqriban${Math.round(
+    elHeading.textContent = `taqriban ${Math.round(
       elInput.value / euro
     )} "euro" pulingiz bor`;
   }
